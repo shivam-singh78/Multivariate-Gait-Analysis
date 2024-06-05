@@ -1,0 +1,12 @@
+Gait’s Disease Detection Using Machine Learning
+
+Algorithm / Model used: Xception Architecture.
+
+Detection of Gait's disease Spiral drawing:
+Training accuracy: 95.34%. and 
+Validation accuracy: 93.00%.
+
+Detection of Gait's disease wave drawing:
+Training accuracy : 93.34%. and 
+Validation accuracy : 86.00%.
+

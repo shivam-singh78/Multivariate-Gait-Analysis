@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with LeadMark landing page.">
+    <meta name="author" content="Devcrud">
+    <title>Gait Analysis</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="../static/assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + LeadMark main styles -->
+	<link rel="stylesheet" href="../static/assets/css/leads.css">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+    <!-- page Navigation -->
+    <nav class="navbar custom-navbar navbar-expand-md navbar-light fixed-top" data-spy="affix" data-offset-top="10">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="assets/imgs/logo.svg" alt="">
+            </a>
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">                     
+                <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('first')}}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('login')}}">Login</a>
+                    </li>
+					 
+						<li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('indexs')}}">Preview_wave</a>
+                    </li>
+						<li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('performances')}}">Performance_wave</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Of Second Navigation -->
+
+    <!-- Page Header -->
+    <header class="header">
+        <div class="overlay">
+<h1 class="title">Gait Analysis drawing</h1>   
+        </div>  
+        <div class="shape">
+            <svg viewBox="0 0 1500 200">
+                <path d="m 0,240 h 1500.4828 v -71.92164 c 0,0 -286.2763,-81.79324 -743.19024,-81.79324 C 300.37862,86.28512 0,168.07836 0,168.07836 Z"/>
+            </svg>
+        </div>  
+        <div class="mouse-icon"><div class="wheel"></div></div>
+    </header>
+    <!-- End Of Page Header -->
+
+    <!-- Service Section -->
+    
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section portfolio-section">
+        <div class="container">
+           <h6 class="section-title text-center">Prediction</h6>
+            <h6 class="section-subtitle mb-3 text-center"></h6>
+            
+			 
+			</br>
+			   <h6 class="section-title text-center"></h6>
+             
+       </br>
+	   </br>
+
+       <body>
+            
+      <nav class="root navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid row">
+          <div class="navbar-header col-md-1 col-sm-1">
+           
+          </div>
+          <div class="navbar-header col-md-12 col-sm-12"><h2 style="font-size: 2.5em;"> Detection of Gait's Wave drawing
+              </h1></div>    
+        </div>
+      </nav>
+     
+       <div class="content">
+             
+              <div class="col-lg-12">
+      
+                  {% if prediction %}
+                    <br>
+                    <div style="margin-left:330px">
+               <img src="{{img_path}}" height="300px" width="300px"></div>
+                    <br>
+                  <br>
+                    <h2> Gait's Wave drawing prediction  : <i> {{prediction}} </i></h2>
+                  
+                    {% endif %}
+                  </div>
+           
+    
+    </body>	 </div>	
+    </div>
+
+
+      
+				
+				
+				
+				
+            </div>   
+                 
+    </section>
+    <!-- End of portfolio section -->
+
+    <!-- Blog Section -->
+   
+    <!-- End of Testmonial Section -->
+
+    <!-- Contact Section -->
+   <section id="contact" class="section has-img-bg pb-0">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-5 my-3">
+                    
+                </div>
+                <div class="col-md-7">
+                    <form>
+                        <h4 class="mb-4"></h4>
+                        <div class="form-row">
+                                                  
+                        </div>                          
+                    </form>
+                </div>
+            </div>
+            <!-- Page Footer -->
+            <footer class="mt-5 py-4 border-top border-secondary">
+               
+            </footer>
+            <!-- End of Page Footer -->  
+        </div>
+    </section>
+	
+	
+	<!-- core  -->
+    <script src="../static/assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="../static/assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+	<script src="../static/assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Isotope -->
+    <script src="../static/assets/vendors/isotope/isotope.pkgd.js"></script>
+
+    <!-- LeadMark js -->
+    <script src="../static/assets/js/leadmark.js"></script>
+
+</body>
+</html>
